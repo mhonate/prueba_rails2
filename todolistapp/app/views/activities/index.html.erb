@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Activities</h1>
+
+
+    <% @activities.each do |activity| %>
+      
+        <%= activity.title %>
+        <%= activity.comment %>
+        <%= image_tag activity.photo %>
+       <!-- <td><%= link_to 'Show', activity %></td> 
+        <td><%= link_to 'Edit', edit_activity_path(activity) %></td>
+        <td><%= link_to 'Destroy', activity, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+     
+    <% end %>
+
+
+<!--<%= link_to 'New Activity', new_activity_path %>-->
