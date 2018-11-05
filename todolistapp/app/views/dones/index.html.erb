@@ -1,0 +1,10 @@
+<table class="table">
+	<% @dones.each do |done| %>
+		<tr>
+			<td> <%= done.activity.title %> </td>
+		</tr>
+	<% end %>
+			<th> Actividades ejecutadas </th>
+			<td> <%= @dones.map{|done| done.activity.title}.count %></td>
+
+</table>
